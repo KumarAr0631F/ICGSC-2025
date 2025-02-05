@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import Guidelines from "./pages/Guidelines";
+import ContactUs from "./pages/ContactUs";
+import PatronsAndChairs from "./pages/PatronsAndChairs";
+import AdvisoryCommittee from "./pages/AdvisoryCommittee";
+import ConferenceSchedule from "./pages/ConferenceSchedule";
+import OrganisingCommittee from "./pages/OrganisingCommittee";
+import Registration from "./pages/Registration";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/guidelines" element={<Guidelines />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/schedule" element={<ConferenceSchedule />} />
+        <Route path="/patrons" element={<PatronsAndChairs />} />
+        <Route path="/organising-committee" element={<OrganisingCommittee />} />
+        <Route path="/advisory-committee" element={<AdvisoryCommittee />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
