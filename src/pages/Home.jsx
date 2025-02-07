@@ -24,10 +24,10 @@ const Home = () => {
       <div className="w-full max-w-6xl px-4 md:px-8 lg:px-12 py-8">
         {/* About Conference */}
         <div className="mb-12">
-          <h3 className="text-blue-700 text-2xl md:text-3xl font-bold">
+          <h3 className="text-green-700 text-2xl md:text-3xl font-bold">
             Background of the Conference
           </h3>
-          <hr className="bg-blue-700 border h-1 w-full my-2" />
+          <hr className="bg-green-700 border h-1 w-full my-2" />
           <p className="text-base md:text-lg text-gray-700 text-justify">
             Green Chemistry is an essential tool towards sustainable development
             and provides solution to various social and environmental issues by
@@ -55,10 +55,10 @@ const Home = () => {
         </div>
         {/* About Manav Rachna University */}
         <div className="mb-12">
-          <h3 className="text-blue-700 text-2xl md:text-3xl font-bold">
+          <h3 className="text-green-700 text-2xl md:text-3xl font-bold">
             About Manav Rachna University
           </h3>
-          <hr className="bg-blue-700 border h-1 w-full my-2" />
+          <hr className="bg-green-700 border h-1 w-full my-2" />
           <p className="text-base md:text-lg text-gray-700 text-justify">
             Manav Rachna University (MRU) is a leading State Private University
             (established by Haryana State Legislature Act No 26 of 2014 & under
