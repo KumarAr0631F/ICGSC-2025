@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { assets } from "../assets/assets";
 
 const Home = () => {
   return (
@@ -21,6 +22,22 @@ const Home = () => {
           </p>
         </div>
       </div>
+
+      {/* Scrolling Text */}
+      <div className="bg-red-600 text-white w-full mt-2">
+        <marquee
+          behavior="scroll"
+          direction="left"
+          className="py-1 text-center flex text-sm md:text-lg"
+        >
+          Paper Submission Deadline:- 10th March, 2025
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Notification of Acceptance:- 10th March, 2025
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Registration Deadline:- 17th March, 2025
+        </marquee>
+      </div>
+
       <div className="w-full max-w-6xl px-4 md:px-8 lg:px-12 py-8">
         {/* About Conference */}
         <div className="mb-12">
@@ -90,6 +107,39 @@ const Home = () => {
               www.mru.edu.in
             </NavLink>
           </p>
+        </div>
+
+        <div className="mb-12">
+          <h3 className="text-green-700 text-2xl md:text-3xl font-bold">
+            Subthemes
+          </h3>
+          <hr className="bg-green-700 border h-1 w-full my-2" />
+          <ul>
+            <li>1.Analytical Methods in Green Chemistry</li>
+            <li>2.Biodegradation and Waste Management y</li>
+            <li>3.Biomass & Bioenergy</li>
+            <li>4.Biopolymer & Bioplastics</li>
+            <li>5.Eco-Friendly Materials</li>
+            <li>6.Green Catalysis</li>
+            <li>7.Green Chemistry & Sustainable Processes</li>
+            <li>8.Green Chemistry in Environment</li>
+            <li>9.Green Engineering</li>
+            <li>10.Waste Water Remediation Technology</li>
+            <li>11.Sustainable Agriculture and Organic Farming</li>
+            <li>12.Renewable and Recyclable Materials</li>
+            <li>13.Environmental science</li>
+            <li>14.environmental Law</li>
+          </ul>
+        </div>
+
+        <div className="mt-5">
+          <h3 className="text-blue-700 text-2xl md:text-3xl font-bold">
+            Our Sponsors
+          </h3>
+          <hr className="bg-blue-700 border h-1 w-full my-2" />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <img src={assets.sponsor_logo_1} alt="" />
+          </div>
         </div>
       </div>
     </div>

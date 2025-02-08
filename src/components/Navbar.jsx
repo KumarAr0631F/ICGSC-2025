@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-slate-100 sticky top-0 z-50">
-      <div className="bg-gray-100 ml-5 mr-5 hidden md:flex justify-between items-center">
+      <div className="bg-gray-100 ml-5 mr-5 p-1 hidden md:flex justify-between items-center">
         <div className="flex flex-1 space-x-6 justify-start items-center">
           <NavLink to={"/"}>
             <img
@@ -243,6 +243,9 @@ const Navbar = () => {
           </div>
         </ul>
       </div>
+
+      {/* Blue strip navbar */}
+
       <div className="text-white bg-blue-500 hidden md:flex items-center justify-around sticky top-[64px] z-50 w-full">
         {/* Navbar Container */}
         <div className="flex items-center justify-between">
