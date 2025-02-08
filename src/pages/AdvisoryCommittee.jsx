@@ -6,7 +6,6 @@ const AdvisoryCommittee = () => {
       <div className="container mx-auto px-6 md:px-12">
         {/* Patrons Section */}
         <div className="mb-3">
-          <hr className="border-t border-blue-500 mb-5" />
 
           {/* Chief Patrons */}
           <h2 className="text-xl font-semibold text-gray-700">
