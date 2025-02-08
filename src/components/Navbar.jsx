@@ -156,10 +156,7 @@ const Navbar = () => {
                     path: "/organising-committee",
                   },
                   { label: "Advisory Committee", path: "/advisory-committee" },
-                  {
-                    label: "Techinal Committee",
-                    path: "/technical-committee",
-                  }, // Added extraClass
+                   // Added extraClass
                 ].map((item) => (
                   <li key={item.label} className={item.extraClass || ""}>
                     <button
@@ -190,48 +187,6 @@ const Navbar = () => {
             </li>
           ))}
 
-          <li>
-            <button
-              onClick={toggleVenueDropdown}
-              className="text-lg flex items-center w-full"
-            >
-              Venue & Travels
-              <svg
-                className={`w-5 h-5 transition-transform duration-300 ${
-                  isVenueDropdownOpen ? "rotate-180" : "rotate-0"
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            {isVenueDropdownOpen && (
-              <ul className="pl-4 mt-2 space-y-2">
-                {[
-                  { label: "Conference Venue", path: "/venue" },
-                  { label: "Accommodation", path: "/accommodation" },
-                  { label: "Tourist Places Nearby", path: "/tourist-places" },
-                ].map((item) => (
-                  <li key={item.label}>
-                    <button
-                      onClick={() => handleMenuItemClick(item.path)}
-                      className="text-base"
-                    >
-                      {item.label}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
           <div>
             <Link
               to="https://cmt3.research.microsoft.com/User/Login"
