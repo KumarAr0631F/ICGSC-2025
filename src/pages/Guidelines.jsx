@@ -2,8 +2,10 @@ import React from 'react'
 
 const Guidelines = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-4 sm:px-6 lg:px-8 flex flex-col items-center">
-      
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className=" text-gray=-900 text-4xl font-semibold py-4 px-8 rounded">
+        to be updated Soon...
+      </div>
     </div>
   )
 }
