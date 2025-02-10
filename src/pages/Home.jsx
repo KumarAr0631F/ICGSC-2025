@@ -42,36 +42,7 @@ const Home = () => {
 
       <div className="w-full max-w-6xl px-4 md:px-8 lg:px-12 py-8">
         {/* About Conference */}
-        <div className="mb-12">
-          <h3 className="text-green-700 text-2xl md:text-3xl font-bold">
-            Background of the Conference
-          </h3>
-          <hr className="bg-green-700 border h-1 w-full my-2" />
-          <p className="text-base md:text-lg text-gray-700 text-justify">
-            Green Chemistry is an essential tool towards sustainable development
-            and provides solution to various social and environmental issues by
-            reducing the use of hazardous substances during different stages of
-            planning, manufacturing and application. Since the emergence of
-            industrial and technological revolutions, economic indicators have
-            been considered as key criteria for measuring progress. However,
-            technological advancement has been accompanied by negative impact on
-            environment in terms of pollution and degradation. Green chemistry
-            provides the solution of social and environmental issues by reducing
-            the use of hazardous substances during the planning, manufacturing
-            and their applications. Green chemistry practices involve
-            minimization of toxic solvents in chemical processes, use of
-            renewable and innocuous raw materials, energy savings and waste
-            minimization etc. Advancement in green practices through consistent
-            research and development is required to address current social and
-            environmental challenges. For this, we are organizing the Green &
-            Sustainable Chemistry Conference at Manav Rachna University,
-            Faridabad from <b>March 20-21, 2025</b>. The conference is sponsored
-            by INDIAN OIL CORPORATION LIMITED R & D Centre Faridabad. The
-            conference will be held in hybrid mode with lectures of Resource
-            persons in relevant filed, oral and paper presentation by academic/
-            industrial/ students delegates of the conferences.
-          </p>
-        </div>
+
         {/* About Manav Rachna University */}
         <div className="mb-12">
           <h3 className="text-green-700 text-2xl md:text-3xl font-bold">
@@ -108,6 +79,37 @@ const Home = () => {
             >
               www.mru.edu.in
             </NavLink>
+          </p>
+        </div>
+
+        <div className="mb-12">
+          <h3 className="text-green-700 text-2xl md:text-3xl font-bold">
+            Background of the Conference
+          </h3>
+          <hr className="bg-green-700 border h-1 w-full my-2" />
+          <p className="text-base md:text-lg text-gray-700 text-justify">
+            Green Chemistry is an essential tool towards sustainable development
+            and provides solution to various social and environmental issues by
+            reducing the use of hazardous substances during different stages of
+            planning, manufacturing and application. Since the emergence of
+            industrial and technological revolutions, economic indicators have
+            been considered as key criteria for measuring progress. However,
+            technological advancement has been accompanied by negative impact on
+            environment in terms of pollution and degradation. Green chemistry
+            provides the solution of social and environmental issues by reducing
+            the use of hazardous substances during the planning, manufacturing
+            and their applications. Green chemistry practices involve
+            minimization of toxic solvents in chemical processes, use of
+            renewable and innocuous raw materials, energy savings and waste
+            minimization etc. Advancement in green practices through consistent
+            research and development is required to address current social and
+            environmental challenges. For this, we are organizing the Green &
+            Sustainable Chemistry Conference at Manav Rachna University,
+            Faridabad from <b>March 20-21, 2025</b>. The conference is sponsored
+            by INDIAN OIL CORPORATION LIMITED R & D Centre Faridabad. The
+            conference will be held in hybrid mode with lectures of Resource
+            persons in relevant filed, oral and paper presentation by academic/
+            industrial/ students delegates of the conferences.
           </p>
         </div>
 

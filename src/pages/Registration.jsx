@@ -19,8 +19,7 @@ const Registration = () => {
             </span>
             . All the abstracts will be reviewed by experts in the relevant
             areas and then will be forwarded to the author with decision.
-            Selected full length papers will be published in UGC approved
-            journal. Best paper awards for oral and poster presentations will be
+            3 Best paper awards for oral and poster presentations will be
             given in valedictory session.
           </p>
         </div>
